@@ -98,8 +98,8 @@ public class PrintArraySpiral {
 	public static void printArraySpiral(int[][] inputArray) {
 
 		int ur = 0; // Upper row
-		int rc = cols - 1; // Right column col-1
-		int lr = rows - 1; // Lower row row-1
+		int rc = (inputArray.length) - 1; // Right column col-1
+		int lr = (inputArray[0].length) - 1; // Lower row row-1
 		int lc = 0; // Left column
 		while (ur <= lr && rc >= lc) {
 			for (int i = lc; i < rc; i++) {
